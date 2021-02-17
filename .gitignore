@@ -1,4 +1,5 @@
 /node_modules
+/pr-lint/node_modules/
 /build
 .env
 yarn-debug.log*
@@ -6,3 +7,4 @@ yarn-error.log*
 _githistory.json
 *.BAK
 *.bak
+.DS_Store

@@ -57,6 +57,7 @@ tags:
         fetch. Some browsers accept the <code>blob:</code> and <code>data:</code> schemes.
       </li>
       <li>A {{domxref("Request")}} object.</li>
+      <li>A {{domxref("URL")}} object, or any other object with a <a href="https://developer.mozilla.org/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file#stringifiers">stringifier</a> that provides the URL for the resource you want to fetch.</li>
     </ul>
   </dd>
   <dt><code><var>init</var></code> {{optional_inline}}</dt>
@@ -98,7 +99,7 @@ tags:
     <ul>
         <li><code>follow</code>: Automatically follow redirects. Unless otherwise stated the redirect mode is set to <code>follow</code></li>
         <li><code>error</code>: Abort with an error if a redirect occurs.</li>
-        <li><code>manual</code>: Caller intends to process the response in another context.<br>See <a class="external" href="https://fetch.spec.whatwg.org/#requests">WHATWG fetch standard</a> for more information.</li>
+        <li><code>manual</code>: Caller intends to process the response in another context.<br>See <a href="https://fetch.spec.whatwg.org/#requests">WHATWG fetch standard</a> for more information.</li>
     </ul>
       <dt><code>referrer</code></dt>
       <dd>A {{domxref("USVString")}} specifying the referrer of the request. This can be a

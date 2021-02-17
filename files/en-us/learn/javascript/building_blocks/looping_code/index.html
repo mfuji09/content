@@ -322,7 +322,7 @@ btn.addEventListener('click', function() {
     if (splitContact[0].toLowerCase() === searchName) {
       para.textContent = splitContact[0] + '\'s number is ' + splitContact[1] + '.';
       break;
-    } else {
+    } else if (i === contacts.length - 1) {
       para.textContent = 'Contact not found.';
     }
   }
@@ -673,7 +673,7 @@ textarea.onkeydown = function(e){
 
 function insertAtCaret(text) {
   const scrollPos = textarea.scrollTop;
-  const caretPos = textarea.selectionStart;
+  let caretPos = textarea.selectionStart;
   const front = (textarea.value).substring(0, caretPos);
   const back = (textarea.value).substring(textarea.selectionEnd, textarea.value.length);
 
@@ -835,7 +835,7 @@ textarea.onkeydown = function(e){
 
 function insertAtCaret(text) {
   const scrollPos = textarea.scrollTop;
-  const caretPos = textarea.selectionStart;
+  let caretPos = textarea.selectionStart;
   const front = (textarea.value).substring(0, caretPos);
   const back = (textarea.value).substring(textarea.selectionEnd, textarea.value.length);
 
